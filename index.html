@@ -10,31 +10,51 @@
 </head>
 <body>
   <nav>
+
+<!-- mobile menu-->
     <span class="material-symbols-outlined" id="menu-btn">
       menu
+    </span>
+    <div class="menu-div hide-menu" id="menu-div">
+      <span class="close-btn material-symbols-outlined" id="close-btn">
+        close
       </span>
+      <a href="#about-me-section" id="about-me-ancore">Acerca de mí</a>
+      <a href="#my-habilities-section" id="my-habilities-ancore" >Mis habilidades</a>
+      <a href="#formation-section" id="formation-ancore">Formación</a>
+      <a href="#projects-section" id="projects-ancore">Proyectos</a>
+      <a href="#contact-section" id="contact-ancore">Contacto</a>
+    </div>
+
+<!--desktop menu-->    
     <div class="div-nav">
       <a class="home-ancore" href="">Home</a>
-      <a href="">Acerca de mí</a>
-      <a href="">Mis habilidades</a>
-      <a href="">Formación</a>
-      <a href="">Proyectos</a>
-      <a href="">Contacto</a>
+      <a href="#about-me-section">Acerca de mí</a>
+      <a href="#my-habilities-section">Mis habilidades</a>
+      <a href="#formation-section">Formación</a>
+      <a href="#projects-section">Proyectos</a>
+      <a href="#contact-section">Contacto</a>
     </div>  
   </nav>
+
+<!--Header-->
+
   <header>
     <img class="portrait" src="./assets/styles/Imágenes/retrato.jpg" alt="portrait image">
     <h2>Hola, soy Sebastián</h2>
     <h1>Desarrollador web</h1>
     <a href="https://www.linkedin.com/in/sebastian-martinez-arango-5962b1238"><img src="./assets/styles/Íconos/linkedin.svg" alt="linkedin icon"></a>
   </header>
+
+<!--Main-->
+
   <main>
     <section class="section-about-me">
       <h3 id="about-me-section">Acerca de mí</h3>
       <p>Soy un historiador que, estudiando lógica, se interesó por la programación. Me caracterizo por la resolución eficiente de problemas y por agregar valor a los productos, haciendo siempre uso de buenas prácticas y del "clean code". Mi formación humanística me ha permitido desarrollar habilidades blandas como el pensamiento crítico, la comunicación efectiva y la resolución de conflictos. Además, hago un doctorado en Ciencias Humanas y Sociales y me encanta bailar salsa</p>
     </section>
     <section class="section-my-habilities">
-      <h3>Mis habilidades</h3>
+      <h3 id="my-habilities-section">Mis habilidades</h3>
       <div class="divs-habilities">
         <div class="divs-habilities-icon">
           <img src="./assets/styles/Íconos/js.png" alt="JavaScript icon">
@@ -60,8 +80,8 @@
         <p>GitHub</p>
       </div>
     </section>
-    <section class="section-formation">
-      <h3>Formación</h3>
+    <section id="section-formation">
+      <h3 id="formation-section">Formación</h3>
       <div class="section-formation-div">
         <p class="secundary-color-p">2022-2023</p>
         <div>
@@ -71,14 +91,17 @@
       </div>
     </section>
     <section class="section-project">
-      <h3>Proyectos</h3>
+      <h3 id="projects-section">Proyectos</h3>
       <a href="https://grand-semolina-d5aa21.netlify.app/">
         <img src="./assets/styles/Imágenes/project1.jpg" alt="project image">
       </a>
     </section>
   </main>
+
+<!--Footer-->
+
   <footer>
-    <h3>Contacto</h3>
+    <h3 id="contact-section">Contacto</h3>
     <div class="footer-div">
       <div class="footer-icon-phone-div">
         <img src="./assets/styles/Íconos/phone.svg" alt="phone icon">
@@ -95,16 +118,9 @@
       favorite
       </span> en Academlo</p>
   </footer>
-  <div class="menu-div hide-menu" id="menu-div">
-    <span class="close-btn material-symbols-outlined" id="close-btn">
-      close
-    </span>
-    <a href="">Acerca de mí</a>
-    <a href="">Mis habilidades</a>
-    <a href="">Formación</a>
-    <a href="">Proyectos</a>
-    <a href="">Contacto</a>
-  </div>
+
+ 
+
 </body>
 <script src="./assets/js/main.js"></script>
 </html>
